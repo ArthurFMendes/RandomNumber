@@ -14,7 +14,7 @@ shinyServer(function(input, output) {
    
   output$rdm_number <- reactive({
     if (input$rerun > 0)
-      round(sample(input$range, input$num, replace = FALSE), digits = input$decimals)
+      sample(input$range, input$num, replace = FALSE)
     else
       ""
     
