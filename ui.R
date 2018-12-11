@@ -29,12 +29,6 @@ shinyUI(fluidPage(
                    min = 1),
       hr(),
       
-      sliderInput("decimals", 
-                  "Number of decimals:", 
-                  min = 0,
-                  max = 5, 
-                  value = 0),
-      hr(),
       
       sliderInput("range", 
                    "Range:", 
